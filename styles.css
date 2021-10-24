@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-title-font: 'Poppins', sans-serif;
+    --main-content-font: 'Zen Old Mincho', serif;
+    --title-font-size: 48px;
+    --content-font-size: 24px;
+}
+
+body {
+    padding: 0 48px 48px;
+    /* overscroll-behavior-y: none; */
+}
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 0px;
+    background: linear-gradient(to right, #ff5f6d, #ffc371);
+    z-index: 100;
+    transition: width 0.2s ease-out;
+}
+.article-title {
+    font-size: var(--title-font-size);
+    font-family: var(--main-title-font);
+}
+.article-content {
+    font-family: var(--main-content-font);
+    font-size: var(--content-font-size);
+}
